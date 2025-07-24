@@ -102,17 +102,17 @@ export const Mask = () => {
         <div className="relative max-w-7xl mx-auto">
           {/* Custom Arrows */}
           <button
-            className="custom-prev absolute left-[-4px] md:left-[-50px] top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
+            className="custom-prev absolute left-[-4px] md:left-[-15px] 2xl:left-[-30px] top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
             aria-label="Previous"
           >
-            <Image src={PrevArrwo} width={10} alt="pre" />
+            <Image src={PrevArrwo} width={20} alt="pre" />
           </button>
 
           <button
-            className="custom-next absolute right-[-4px]  md:right-[-50px] top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
+            className="custom-next absolute right-[-4px] md:right-[-15px] 2xl:right-[-30px] top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
             aria-label="Next"
           >
-            <Image src={NextArrwo} width={10} alt="next" />
+            <Image src={NextArrwo} width={20} alt="next" />
           </button>
 
           {/* Swiper */}
@@ -127,7 +127,7 @@ export const Mask = () => {
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              1024: { slidesPerView: 2 },
             }}
             className="SheetMaskSwiper"
           >
