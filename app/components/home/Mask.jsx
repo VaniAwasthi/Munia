@@ -70,11 +70,10 @@ const sheetMasks = [
     name: "Tea Tree Mask",
     image: Soothing,
     modalItems: [
-      { name: "Aloe Vera Mask", image: "/masks/aloe-vera.png" },
-      { name: "Tomato Mask", image: "/masks/tomato.png" },
-      { name: "Kombucha Mask", image: "/masks/kombucha.png" },
-      { name: "Green Tea Mask", image: "/masks/green-tea.png" },
-      { name: "Papaya Mask", image: "/masks/papaya.png" },
+      { name: "Tea Tree Mask", image: Soothing4 },
+      { name: "Oatmeal Mask", image: Soothing3 },
+      { name: "Avocado Mask ", image: Soothing1 },
+      { name: "Charcoal Mask ", image: Soothing2 },
     ],
   },
 ];
