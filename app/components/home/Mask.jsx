@@ -105,14 +105,14 @@ export const Mask = () => {
             className="custom-prev absolute left-[-4px] md:left-[-15px] 2xl:left-[-30px] top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
             aria-label="Previous"
           >
-            <Image src={PrevArrwo} width={20} alt="pre" />
+            <Image src={PrevArrwo} width={12} alt="pre" />
           </button>
 
           <button
             className="custom-next absolute right-[-4px] md:right-[-15px] 2xl:right-[-30px] top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
             aria-label="Next"
           >
-            <Image src={NextArrwo} width={20} alt="next" />
+            <Image src={NextArrwo} width={12} alt="next" />
           </button>
 
           {/* Swiper */}
@@ -134,13 +134,16 @@ export const Mask = () => {
             {sheetMasks.map((mask, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white p-4 border border-white cursor-pointer hover:shadow-lg transition rounded">
-                  <div className="w-fit mx-auto shadow-[0_8px_30px_#F7DDDD]">
+                  <div
+                    className="w-fit mx-auto shadow-[0_8px_30px_#F7DDDD] h-[450px]"
+                    onClick={() => openModal(mask.modalItems)}
+                  >
                     <Image
                       src={mask.image}
                       alt={mask.name}
                       width={300}
                       height={400}
-                      className="mx-auto"
+                      className="mx-auto h-[450px] w-[300px] object-cover rounded-t"
                     />
                   </div>
                 </div>
