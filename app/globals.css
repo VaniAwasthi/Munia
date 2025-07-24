@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lustria&display=swap");
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --themeColor: #7b615a;
+}
+
+.primary {
+  background-color: var(--themeColor);
+  color: #fff;
+}
+
+.secondary {
+  font-family: "Lustria", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+.swiper-custom.swiper-button-next:after {
+  color: var(--background);
+  font-size: 25px !important;
+  margin-right: 20px;
+}
+.swiper-custom .swiper-button-prev:after,
+.swiper-custom .swiper-button-next:after {
+  color: var(--background);
+  font-size: 25px !important;
+  margin-left: 20px;
+}
+/* sheet */
+
+.image-glow-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-glow {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 15px 45px rgba(247, 221, 221, 0.8);
+  border-radius: 8px; /* optional, based on design */
+}
