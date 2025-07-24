@@ -4,14 +4,15 @@ import Image from "next/image";
 import Logo from "../assets/logo.svg";
 import Instagram from "../assets/instagram.svg";
 import Facebook from "../assets/facebook.svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="font-[--font-raleway] bg-[#7c5b52] text-white px-6 md:px-16 py-14 text-sm">
       <div className="max-w-7xl mx-auto flex flex-col-reverse sm:flex-row justify-between items-start gap-10">
         {/* Left: Newsletter Signup */}
-        <div className="flex-1 max-w-2xl">
-          <h3 className="uppercase font-light tracking-wider mb-2 text-sm">
+        <div className=" max-w-xl">
+          <h3 className="uppercase font-light tracking-wider mb-2 text-[18px] my-3 pb-4">
             Sign up for email and/or texts for the latest updates & more
           </h3>
           <p className="text-gray-200 text-xs mb-6 max-w-md leading-relaxed">
@@ -38,21 +39,35 @@ const Footer = () => {
         <div className="flex flex-row-reverse sm:flex-row gap-13 md:gap-10 w-full md:w-auto justify-center md:justify-between items-center md:items-start">
           {/* About + Contact + Social */}
           <div className="space-y-5 text-left">
-            <div>
-              <h4 className="uppercase font-semibold tracking-wide text-sm">
+            <div className="flex flex-col space-y-1">
+              <Link
+                href="/about-us"
+                className="uppercase font-semibold tracking-wide text-sm"
+              >
                 About
-              </h4>
-              <p className="mt-1 text-sm">Our Story</p>
+              </Link>
+              <Link href="/about-us" className="mt-1 text-sm">
+                Our Story
+              </Link>
             </div>
-            <div>
-              <h4 className="uppercase font-semibold tracking-wide text-sm">
+            <div className="flex flex-col space-y-1">
+              <Link
+                href="/contact"
+                className="uppercase font-semibold tracking-wide text-sm"
+              >
                 Contact Us
-              </h4>
+              </Link>
               <div className="flex space-x-4 mt-2">
-                <a href="#" aria-label="Instagram">
+                <a
+                  href="https://www.instagram.com/muinacosmetics/"
+                  aria-label="Instagram"
+                >
                   <Image src={Instagram} alt="Instagram" className="w-5 h-5" />
                 </a>
-                <a href="#" aria-label="Facebook">
+                <a
+                  href="https://www.facebook.com/people/Muina-Cosmetics/61571584588767/?_rdr"
+                  aria-label="Facebook"
+                >
                   <Image src={Facebook} alt="Facebook" className="w-5 h-5" />
                 </a>
               </div>

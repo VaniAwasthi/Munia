@@ -196,7 +196,7 @@ export const CleansingRange = () => {
                   alt={item.title}
                   width={180}
                   height={250}
-                  className="object-contain transition-transform duration-300 hover:scale-105"
+                  className="object-contain transition-transform duration-300 hover:scale-105 h-[300px]"
                 />
                 <motion.p
                   initial={{ x: -50, opacity: 0 }}
