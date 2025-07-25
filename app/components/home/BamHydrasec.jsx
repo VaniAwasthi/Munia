@@ -129,13 +129,13 @@ export const EssenceAndBalmSection = () => {
 };
 export const PatchSection = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4  py-16" id="acne">
+    <section className="max-w-7xl mx-auto px-4 " id="acne">
       <Image
         src={PatchImg}
         alt="Patch"
         width={400}
         height={500}
-        className="object-cover w-full"
+        className="object-contain w-full h-[600px] md:h-[600px] mb-8"
       />
     </section>
   );
