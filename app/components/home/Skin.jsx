@@ -252,15 +252,20 @@ export const CleansingRange = () => {
 export const HandcareSec = () => {
   return (
     <>
-      <section id="ampoule" className="max-w-7xl mx-auto my-5">
+      <section
+        id="ampoule"
+        className="max-w-7xl mx-auto my-5 px-4 md:px-8 h-[350px] md:h-[420px] lg:h-[500px] bg-white flex items-center justify-center overflow-hidden"
+      >
         <Image
           src={AmpouleBanner}
-          width={600}
-          height={600}
-          alt="handcare"
-          className="w-full h-full object-center"
+          alt="Peptide Ampoule Banner"
+          width={800}
+          height={500}
+          className="object-contain w-full h-full"
+          priority
         />
       </section>
+
       <section id="handcare" className="w-full my-5">
         <Image
           src={HandcareBanner}
