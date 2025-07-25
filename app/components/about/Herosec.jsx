@@ -25,7 +25,7 @@ export const AboutSec = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: false, amount: 0.2 }}
-          className="font-[--font-lustria] text-xl font-regular md:text-[45px] mb-4  text-left md:text-left"
+          className="font-lustria text-xl font-regular md:text-[45px] mb-4  text-left md:text-left leading-[3rem]"
         >
           Rooted in Ritual. Elevated by Nature.
           <br /> Powered by Science.
@@ -41,7 +41,7 @@ export const AboutSec = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="font-[--font-raleway] text-gray-700 text-[10px] md:text-[12px] lg:text-[16px] leading-relaxed"
+            className="font-raleway text-gray-700 text-[10px] md:text-[12px] lg:text-[16px] leading-relaxed"
           >
             At Muina, skincare is more than surface deep—it's a quiet revolution
             in how we treat our skin and ourselves. Born from the belief that
@@ -55,7 +55,7 @@ export const AboutSec = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="font-[--font-raleway] text-gray-700 text-[10px] md:text-[12px] lg:text-[16px] leading-relaxed"
+            className="font-raleway text-gray-700 text-[10px] md:text-[12px] lg:text-[16px] leading-relaxed"
           >
             We don’t believe in 10-step routines or overcomplicated regimes.
             Instead, we craft multi-functional products that honour your time,

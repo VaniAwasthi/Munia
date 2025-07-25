@@ -16,7 +16,7 @@ export const HeroSection = () => {
 
 export const FacialMaskSec = () => {
   return (
-    <section className="w-full mx-auto py-10">
+    <section className="w-full">
       <div className="w-full">
         <video className="w-full" muted autoPlay loop playsInline>
           <source src="/videos/Muina-Pomegranate.mp4" type="video/mp4" />

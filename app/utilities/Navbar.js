@@ -3,13 +3,13 @@ import Image from "next/image";
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { HiMenu, HiX } from "react-icons/hi";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo.webp";
 import Link from "next/link";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="primary font-[--font-lustria]">
+    <nav className="primary font-lustria">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
