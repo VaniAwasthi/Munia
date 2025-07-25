@@ -3,8 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import Banner from "../../assets/contact/ContactBanner.svg";
-import TextBg from "../../assets/contact/InfoSec.svg";
+import Banner from "../../assets/contact/ContactBanner.webp";
+import TextBg from "../../assets/contact/InfoSec.webp";
 import { motion } from "framer-motion";
 
 export default function Contact() {
@@ -25,7 +25,7 @@ export default function Contact() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="font-[--font-lustria] text-2xl md:text-[56px] font-semibold"
+            className="font-lustria text-2xl md:text-[56px] font-semibold"
           >
             GET IN TOUCH!
           </motion.h1>
@@ -47,14 +47,14 @@ export default function Contact() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="font-[--font-lustria] absolute inset-0 flex items-center justify-center text-[18px] md:text-[35px] px-4 md:px-0 max-w-4xl mx-auto text-[#3d2f2b] md:leading-[4rem]"
+            className="font-lustria absolute inset-0 flex items-center justify-center text-[18px] md:text-[35px] px-4 md:px-0 max-w-4xl mx-auto text-[#3d2f2b] md:leading-[4rem]"
           >
             “WE’D LOVE TO HEAR FROM YOU. WHETHER IT’S FEEDBACK, A QUESTION, OR A
             PARTNERSHIP OPPORTUNITY — DROP US A MESSAGE.”
           </motion.p>
         </div>
 
-        <div className="font-[--font-raleway] mt-16 flex flex-row gap-12 items-stretch justify-center">
+        <div className="font-raleway mt-16 flex flex-row gap-12 items-stretch justify-center">
           {/* Form */}
           <form className="flex-1 max-w-md w-full space-y-6">
             <input
@@ -78,12 +78,14 @@ export default function Contact() {
               className="border w-full p-3 rounded"
             />
 
-            <button
-              type="submit"
-              className="bg-[#DC9B97] hover:bg-[#c98984] text-white px-6 py-3 rounded transition"
-            >
-              Submit
-            </button>
+            <div className="flex justify-start">
+              <button
+                type="submit"
+                className="bg-[#DC9B97] hover:bg-[#c98984] text-white px-6 py-3 rounded transition"
+              >
+                Submit
+              </button>
+            </div>
           </form>
 
           {/* Divider */}
@@ -132,17 +134,17 @@ export default function Contact() {
       </section>
 
       {/* Business Inquiry Section */}
-      <section className="bg-[#F4D1C9] px-5 md:px-8 py-12 text-center">
+      <section className="bg-[#EFD3CA] px-5 md:px-8 py-12 text-center">
         <div className="max-w-5xl mx-auto">
-          <h2 className="font-[--font-lustria] text-2xl md:text-4xl font-bold mb-6">
+          <h2 className="font-lustria text-2xl md:text-4xl font-bold mb-6">
             CONTACT US FOR BUSINESS
           </h2>
-          <p className="font-[--font-raleway] mb-12 text-[16px] md:text-[22px]">
+          <p className="font-raleway mb-12 text-[16px] md:text-[22px] max-w-lg mx-auto">
             "For partnerships, distribution, influencer collaborations, or
             press—let’s connect."
           </p>
 
-          <form className="space-y-6 max-w-xl mx-auto text-left font-[--font-raleway]">
+          <form className="space-y-6 max-w-xl mx-auto text-left font-raleway">
             <input
               type="text"
               placeholder="Company"

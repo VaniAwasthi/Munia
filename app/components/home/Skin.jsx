@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
-import Cleansing from "../../assets/Home/cleanising.svg";
-import handcare from "../../assets/Home/handcare.svg";
-import acne from "../../assets/Home/acne.svg";
-import ampoule from "../../assets/Home/ampoule.svg";
-import stickbalm from "../../assets/Home/stickbalm.svg";
-import eyecare from "../../assets/Home/eyecare.svg";
+import Cleansing from "../../assets/Home/cleanising.webp";
+import handcare from "../../assets/Home/handcare.webp";
+import acne from "../../assets/Home/acne.webp";
+import ampoule from "../../assets/Home/ampoule.webp";
+import stickbalm from "../../assets/Home/stickbalm.webp";
+import eyecare from "../../assets/Home/eyecare.webp";
 import SkinStoryImg from "../../assets/Home/yourSkinStoryImg.svg";
-import HandcareBanner from "../../assets/Home/HandcareBanner.svg";
-import AmpouleBanner from "../../assets/Home/aphole.svg";
+import HandcareBanner from "../../assets/Home/HandcareBanner.webp";
+import AmpouleBanner from "../../assets/Home/aphole.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -21,7 +21,7 @@ import { motion } from "framer-motion";
 
 export const YourSkinStory = () => {
   return (
-    <section className="relative w-full h-auto md:h-[520px] overflow-hidden bg-white">
+    <section className="relative w-full h-auto md:h-[630px] overflow-hidden bg-white">
       {/* Background Video - Only for md and above */}
       <video
         className="hidden md:block absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -41,7 +41,7 @@ export const YourSkinStory = () => {
         flex flex-col
         items-center justify-center
         md:items-end md:justify-end
-        text-center md:text-left font-[--font-lustria]
+        text-center md:text-left font-lustria
         gap-6
         w-full md:w-1/3 ml-auto
       "
@@ -52,7 +52,7 @@ export const YourSkinStory = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="block md:hidden text-3xl font-semibold text-[#4C2E2B] mb-2 font-[--font-lustria]"
+            className="block md:hidden text-3xl font-semibold text-[#4C2E2B] mb-2 font-lustria"
           >
             Your Skin Story
           </motion.h2>
@@ -72,7 +72,7 @@ export const YourSkinStory = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="text-sm text-[#4C2E2B] leading-relaxed font-[--font-raleway] max-w-md"
+            className="text-sm text-[#4C2E2B] leading-relaxed font-raleway max-w-md"
           >
             Rooted in the power of natural ingredients and the wisdom of
             skincare science, Muina offers a curated collection of skin
@@ -103,11 +103,11 @@ export const SkincareSection = () => {
   };
 
   return (
-    <section className="font-[--font-lustria] max-w-7xl mx-auto px-4 md:px-16 my-3 bg-white">
+    <section className="font-lustria max-w-7xl mx-auto px-4 md:px-16 my-10 bg-white">
       {/* Header */}
       <div className="mb-10 text-left">
-        <h2 className="text-3xl md:text-4xl  text-[#5f3d31]">Skincare</h2>
-        <p className="text-sm text-gray-600 mt-1">
+        <h2 className="text-3xl md:text-[48px]  text-[#5f3d31]">Skincare</h2>
+        <p className="text-md text-gray-600 mt-1">
           Because Your Skin Deserves Signature Scent.
         </p>
       </div>
@@ -120,16 +120,16 @@ export const SkincareSection = () => {
             className="cursor-pointer group"
             onClick={() => scrollToSection(item.id)}
           >
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden ">
               <Image
                 src={item.image}
                 alt={item.label}
-                width={300}
-                height={300}
+                width={250}
+                height={250}
                 className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>
-            <p className="mt-2 text-center text-[#5f3d31] font-medium">
+            <p className="mt-2 text-left text-[#5f3d31] font-raleway text-[20px] font-light">
               {item.label}
             </p>
           </div>
@@ -169,10 +169,10 @@ export const CleansingRange = () => {
         {/* Heading with full-width bottom border */}
         <div className="w-full border-b border-[#A26464] md:pb-6">
           <div className=" max-w-7xl mx-auto px-4 ">
-            <h2 className="font-[--font-lustria] text-[32px] md:text-[45px] font-regular text-[#76564D] leading-tight mt-4">
+            <h2 className="font-lustria text-[32px] md:text-[45px] font-regular text-[#76564D] leading-tight mt-4">
               Cleansing Range
             </h2>
-            <p className="font-[--font-raleway] mt-2 text-[14px] md:text-[16px] text-[#000000] max-w-sm">
+            <p className="font-raleway mt-2 text-[14px] md:text-[16px] text-[#000000] max-w-sm">
               Cleanse without stripping—just pure, gentle formulations for daily
               rituals.
             </p>
@@ -203,7 +203,7 @@ export const CleansingRange = () => {
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 1, delay: 0.2 }}
                   viewport={{ once: false, amount: 0.3 }}
-                  className="my-8 font-[--font-raleway] text-[18px] font-light"
+                  className="my-8 font-raleway text-[18px] font-light"
                 >
                   {item.title}
                 </motion.p>
@@ -236,7 +236,7 @@ export const CleansingRange = () => {
                     height={250}
                     className="object-contain"
                   />
-                  <p className="my-5 font-[--font-raleway] text-base font-medium ">
+                  <p className="my-5 font-raleway text-base font-medium ">
                     {item.title}
                   </p>
                 </div>

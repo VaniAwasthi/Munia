@@ -10,12 +10,11 @@ import RiceDeep from "../../assets/About/Rice-Deep.webp";
 import WaterMelon from "../../assets/About/Water-Melon.webp";
 import WhitePearl from "../../assets/About/White-Pearl.webp";
 import BackgroundImage from "../../assets/About/ExplorersBg.png";
-import UserIcon from "../../assets/About/UsernameIcon.svg";
-import UserNameIcon from "../../assets/About/Username.svg";
-import PrevArrwo from "../../assets/Home/sheetMask/pre.svg";
-import NextArrwo from "../../assets/Home/sheetMask/nextArrow.svg";
-import BackgroundLast from "../../assets/About/Broucher-bg.svg";
-import BgBehindHeading from "../../assets/About/text-bg.svg";
+import UserIcon from "../../assets/About/UsernameIcon.webp";
+import UserNameIcon from "../../assets/About/Username.webp";
+import PrevArrwo from "../../assets/Home/sheetMask/pre.webp";
+import NextArrwo from "../../assets/Home/sheetMask/nextArrow.webp";
+import BackgroundLast from "../../assets/About/Broucher-bg.webp";
 export const AboutExplorer = () => {
   const testimonials = [
     {
@@ -36,7 +35,7 @@ export const AboutExplorer = () => {
   ];
 
   return (
-    <section className="relative w-full md:w-full h-auto my-10 overflow-hidden">
+    <section className="relative w-full md:w-full h-auto  overflow-hidden">
       <Image
         src={BackgroundImage}
         alt="Explorer"
@@ -48,7 +47,7 @@ export const AboutExplorer = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: false, amount: 0.3 }}
-          className="font-[--font-lustria] text-black text-3xl md:text-[48px] mb-8 "
+          className="font-lustria text-black text-3xl md:text-[48px] leading-[3.5rem] mb-8 "
         >
           Loved by Skincare <br className="hidden md:block" />
           Explorers Worldwide
@@ -82,20 +81,20 @@ export const AboutExplorer = () => {
                   <Image
                     src={UserIcon}
                     alt="Username Icon"
-                    className="font-[--font-raleway] "
+                    className="font-raleway "
                   />
                   Username
                 </motion.button>
                 <div className="flex">
                   <Image src={UserNameIcon} alt="User" className="m-4" />
-                  <p className="font-[--font-raleway] mt-5">Username</p>
+                  <p className="font-raleway mt-5">Username</p>
                 </div>
                 <motion.p
                   initial={{ x: 50, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 1, delay: 0.2 }}
                   viewport={{ once: false, amount: 0.2 }}
-                  className="font-[--font-raleway] text-[12px] text-black m-4"
+                  className="font-raleway text-[12px] text-black m-4"
                 >
                   {item.paragraph}
                 </motion.p>
@@ -162,15 +161,15 @@ export const AboutExplorer = () => {
                       <Image
                         src={UserIcon}
                         alt="Username Icon"
-                        className="font-[--font-raleway]"
+                        className="font-raleway"
                       />
                       Username
                     </button>
                     <div className="flex">
                       <Image src={UserNameIcon} alt="User" className="m-4" />
-                      <p className="font-[--font-raleway] mt-5">Username</p>
+                      <p className="font-raleway mt-5">Username</p>
                     </div>
-                    <p className="font-[--font-raleway] text-[12px] text-black m-4">
+                    <p className="font-raleway text-[12px] text-black m-4">
                       {item.paragraph}
                     </p>
                   </div>
@@ -201,7 +200,7 @@ export const Broucher = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 0.1 }}
           transition={{ duration: 1 }}
-          className="absolute z-0 text-[64px] md:text-[90px] text-[#000] font-[--font-lustria] uppercase text-center leading-[1.1] tracking-wide blur-sm"
+          className="absolute z-0 text-[64px] md:text-[90px] text-[#000] font-lustria uppercase text-center leading-[1.1] tracking-wide blur-xs"
         >
           READY TO MAKE SKINCARE SIMPLER?
         </motion.h2>
@@ -214,7 +213,7 @@ export const Broucher = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative z-20 text-center text-[28px] md:text-[70px] font-[--font-lustria] text-[#2F2320] px-4 leading-snug max-w-2xl"
+          className="relative z-20 text-center text-[64px] md:text-[90px] font-lustria text-[#2F2320] px-4 leading-snug tracking-wide max-w-6xl"
         >
           READY TO MAKE <br className="md:hidden" /> SKINCARE SIMPLER?
         </motion.h2>
@@ -222,13 +221,16 @@ export const Broucher = () => {
 
       {/* Centered CTA Button */}
       <div className="absolute bottom-10 left-0 right-0 flex justify-center z-30">
-        <motion.button
+        <motion.a
+          href="/Muina_Mockup_Broucher.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-[#76564D1A] text-[#2F2320] font-semibold px-6 py-2 md:py-3 text-sm md:text-base shadow-md border border-[#cdbcb5]"
+          className="bg-[#76564D1A] text-[#2F2320] font-regular font-lustria px-6 py-2 md:py-3 text-sm md:text-[20px] shadow-md "
         >
           Browse Our Brochure
-        </motion.button>
+        </motion.a>
       </div>
     </section>
   );

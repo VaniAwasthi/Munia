@@ -7,29 +7,30 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import { Dialog } from "@headlessui/react";
-import Brightening from "../../assets/Home/sheetMask/Brightening.svg";
-import Nourishing from "../../assets/Home/sheetMask/Nourishing.svg";
-import Soothing from "../../assets/Home/sheetMask/soothing.svg";
-import Moisturizing from "../../assets/Home/sheetMask/Moisturizing.svg";
-import Brightening1 from "../../assets/Home/sheetMask/brightening/Pomegranate.svg";
-import Brightening2 from "../../assets/Home/sheetMask/brightening/YuzuFacial.svg";
-import Brightening3 from "../../assets/Home/sheetMask/brightening/RoseFacial.svg";
-import Brightening4 from "../../assets/Home/sheetMask/brightening/WhitePearl.svg";
-import Nourishing1 from "../../assets/Home/sheetMask/nourishing/Acaiberry.svg";
-import Nourishing2 from "../../assets/Home/sheetMask/nourishing/Tumeric.svg";
-import Nourishing3 from "../../assets/Home/sheetMask/nourishing/Carrot.svg";
-import Nourishing4 from "../../assets/Home/sheetMask/nourishing/RoyalJelly.svg";
-import Soothing1 from "../../assets/Home/sheetMask/soothing/Avocado.svg";
-import Soothing2 from "../../assets/Home/sheetMask/soothing/Charcoal.svg";
-import Soothing3 from "../../assets/Home/sheetMask/soothing/Oatmeal.svg";
-import Soothing4 from "../../assets/Home/sheetMask/soothing/TeaTree.svg";
-import Moisturizing1 from "../../assets/Home/sheetMask/moisturizing/Papaya.svg";
-import Moisturizing2 from "../../assets/Home/sheetMask/moisturizing/Greentea.svg";
-import Moisturizing3 from "../../assets/Home/sheetMask/moisturizing/Kombucha.svg";
-import Moisturizing4 from "../../assets/Home/sheetMask/moisturizing/Tammato.svg";
-import IconImg from "../../assets/Home/sheetMask/icon.svg";
-import PrevArrwo from "../../assets/Home/sheetMask/pre.svg";
-import NextArrwo from "../../assets/Home/sheetMask/nextArrow.svg";
+import Brightening from "../../assets/Home/sheetMask/Brightening.webp";
+import Nourishing from "../../assets/Home/sheetMask/Nourishing.webp";
+import Soothing from "../../assets/Home/sheetMask/soothing.webp";
+import Moisturizing from "../../assets/Home/sheetMask/Moisturizing.webp";
+import Brightening1 from "../../assets/Home/sheetMask/brightening/Pomegranate.webp";
+import Brightening2 from "../../assets/Home/sheetMask/brightening/YuzuFacial.webp";
+import Brightening3 from "../../assets/Home/sheetMask/brightening/RoseFacial.webp";
+import Brightening4 from "../../assets/Home/sheetMask/brightening/WhitePearl.webp";
+import Nourishing1 from "../../assets/Home/sheetMask/nourishing/Acaiberry.webp";
+import Nourishing2 from "../../assets/Home/sheetMask/nourishing/Tumeric.webp";
+import Nourishing3 from "../../assets/Home/sheetMask/nourishing/Carrot.webp";
+import Nourishing4 from "../../assets/Home/sheetMask/nourishing/RoyalJelly.webp";
+import Soothing1 from "../../assets/Home/sheetMask/soothing/Avocado.webp";
+import Soothing2 from "../../assets/Home/sheetMask/soothing/Charcoal.webp";
+import Soothing3 from "../../assets/Home/sheetMask/soothing/Oatmeal.webp";
+import Soothing4 from "../../assets/Home/sheetMask/soothing/TeaTree.webp";
+import Moisturizing1 from "../../assets/Home/sheetMask/moisturizing/Papaya.webp";
+import Moisturizing2 from "../../assets/Home/sheetMask/moisturizing/Greentea.webp";
+import Moisturizing3 from "../../assets/Home/sheetMask/moisturizing/Kombucha.webp";
+import Moisturizing4 from "../../assets/Home/sheetMask/moisturizing/Tammato.webp";
+import IconImg from "../../assets/Home/sheetMask/icon.webp";
+import PrevArrwo from "../../assets/Home/sheetMask/pre.webp";
+import NextArrwo from "../../assets/Home/sheetMask/nextArrow.webp";
+import Link from "next/link";
 
 const sheetMasks = [
   {
@@ -88,28 +89,51 @@ export const Mask = () => {
   };
 
   return (
-    <div className="bg-[#E5B6A7] py-10 px-4 mt-10 font-[--font-lustria] ">
+    <div className="bg-[#FFE3DB] py-10 px-4 mt-10 font-lustria ">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-[40px] font-semibold text-center md:text-left mb-4 text-[#76564D]">
-          Sheet Masks
-        </h2>
-        <p className="text-center md:text-left max-w-xl  text-[#000000] mb-8">
-          Infused with sodium hyaluronate, aloe vera, and hydrolyzed collagen to
-          pull in and lock hydration deep into the skin, delivering a plump,
-          dewy finish.
-        </p>
+        <div className="flex flex-col md:flex-row items-start justify-between mb-6">
+          <div className="flex-1">
+            <h2 className="text-2xl md:text-[45px] font-regular text-[#76564D] text-left">
+              Sheet Masks
+            </h2>
+            <p className="max-w-lg text-[#000000] my-4 text-left font-light text-[14px]">
+              Infused with sodium hyaluronate, aloe vera, and hydrolyzed
+              collagen to pull in and lock hydration deep into the skin,
+              delivering a plump, dewy finish. Enriched with collagen, vitamin
+              E, and botanical extracts (like green tea, chamomile, turmeric),
+              which support skin repair and strength. The inclusion of vitamins
+              A/B5/C and turmeric helps even out skin tone.
+            </p>
+          </div>
+
+          {/* Aligned Arrows */}
+          <div className="hidden md:flex gap-1 mt-4 md:mt-0 md:ml-4">
+            <button
+              className="custom-prev w-10 h-10 flex items-center justify-center"
+              aria-label="Previous"
+            >
+              <Image src={PrevArrwo} width={12} alt="pre" />
+            </button>
+            <button
+              className="custom-next w-10 h-10 flex items-center justify-center  "
+              aria-label="Next"
+            >
+              <Image src={NextArrwo} width={12} alt="next" />
+            </button>
+          </div>
+        </div>
 
         <div className="relative max-w-7xl mx-auto">
           {/* Custom Arrows */}
           <button
-            className="custom-prev absolute left-[-4px] md:left-[-15px] 2xl:left-[-30px] top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
+            className="block md:hidden custom-prev absolute left-[-4px]  top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
             aria-label="Previous"
           >
             <Image src={PrevArrwo} width={12} alt="pre" />
           </button>
 
           <button
-            className="custom-next absolute right-[-4px] md:right-[-15px] 2xl:right-[-30px] top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
+            className="block md:hidden custom-next absolute right-[-4px] md:right-[-15px] 2xl:right-[-30px] top-1/2 -translate-y-1/2 z-10 w-10 h-10   flex items-center justify-center"
             aria-label="Next"
           >
             <Image src={NextArrwo} width={12} alt="next" />
@@ -147,7 +171,7 @@ export const Mask = () => {
                     />
                   </div>
                 </div>
-                <h4 className="font-[--font-lustria] text-[#692F21] text-[22px] text-center md:text-left font-medium mt-4">
+                <h4 className="font-lustria text-[#692F21] text-[20px] text-center md:text-left font-medium mt-4">
                   {mask.category}
                 </h4>
               </SwiperSlide>
@@ -156,9 +180,14 @@ export const Mask = () => {
         </div>
 
         <div className="flex justify-center mt-6">
-          <button className="font-[--font-lustria] border px-6 py-2 rounded bg-[#E5B6A7] hover:bg-gray-100">
+          <a
+            href="/Muina_Mockup_Broucher.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-lustria border px-6 py-2  bg-[#FFE3DB] hover:bg-white border-[#000000]"
+          >
             Browse Our Brochure
-          </button>
+          </a>
         </div>
 
         <Dialog
@@ -178,14 +207,14 @@ export const Mask = () => {
                       alt={item.name}
                       width={200}
                       height={200}
-                      className="mx-auto w-[300px] h-[200px] "
+                      className="mx-auto w-[250px] h-[300px] "
                     />
 
                     {/* Icon just below the sheet mask */}
                     <Image src={IconImg} alt="Icon" className="mx-auto mt-2" />
 
                     {/* Name below the icon */}
-                    <p className="font-[--font-lustria] text-[#692F21] mt-2 text-md font-medium ">
+                    <p className="font-lustria text-[#692F21] mt-2 text-md font-medium ">
                       {item.name}
                     </p>
                   </div>

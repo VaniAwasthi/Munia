@@ -16,7 +16,7 @@ export const Philosophy = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="font-[--font-lustria] text-[#3D2F2B]  text-[38px] md:text-[48px] "
+            className="font-lustria text-[#3D2F2B]  text-[38px] md:text-[48px] "
           >
             Our Philosophy
           </motion.h2>
@@ -25,7 +25,7 @@ export const Philosophy = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="font-[--font-raleway] text-[#3D2F2B]  text-xl md:text-[24px] py-4 mb-3"
+            className="font-raleway text-[#3D2F2B]  text-xl md:text-[24px] py-4 mb-3"
           >
             Intentional Skincare for Real Life.
           </motion.h4>
@@ -34,7 +34,7 @@ export const Philosophy = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="hidden md:block font-[--font-raleway] text-[#000000]  text-base md:text-xl leading-relaxed md:max-w-lg mx-auto md:mx-0"
+            className="hidden md:block font-raleway text-[#000000]  text-base md:text-xl leading-relaxed md:max-w-lg mx-auto md:mx-0"
           >
             Muina is designed for the modern skin—exposed to change, stress, and
             time. Our approach is about balance, not excess. We create
@@ -63,7 +63,7 @@ export const Philosophy = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="block md:hidden font-[--font-raleway] text-gray-700 text-base md:text-lg leading-relaxed md:max-w-lg py-4 px-8"
+            className="block md:hidden font-raleway text-gray-700 text-base md:text-lg leading-relaxed md:max-w-lg py-4 px-8"
           >
             Muina is designed for the modern skin—exposed to change, stress, and
             time. Our approach is about balance, not excess. We create
