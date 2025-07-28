@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import {useState,useEffect} from "react";
 import Image from "next/image";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
@@ -8,6 +9,76 @@ import TextBg from "../../assets/contact/InfoSec.webp";
 import { motion } from "framer-motion";
 
 export default function Contact() {
+
+
+  const [sendingContact, setSendingContact] = useState(false);
+const [contactSuccessMsg, setContactSuccessMsg] = useState('');
+
+const [sendingBusiness, setSendingBusiness] = useState(false);
+const [businessSuccessMsg, setBusinessSuccessMsg] = useState('');
+
+  const handleContactSubmit = async (e) => {
+  e.preventDefault();
+  setSendingContact(true);
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  try {
+    const res = await fetch("/data/contact", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await res.json();
+
+    if (res.ok && data.success) {
+      setContactSuccessMsg(data.message || "Message sent successfully!");
+      form.reset();
+    } else {
+      alert(data.error || "Something went wrong.");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Unexpected error. Please try again.");
+  } finally {
+    setSendingContact(false);
+    setTimeout(() => setContactSuccessMsg(''), 3000);
+  }
+};
+
+
+
+  const handleBusinessSubmit = async (e) => {
+  e.preventDefault();
+  setSendingBusiness(true);
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  try {
+    const res = await fetch("/data/business", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await res.json();
+
+    if (res.ok && data.success) {
+      setBusinessSuccessMsg(data.message || "Inquiry sent successfully!");
+      form.reset();
+    } else {
+      alert(data.error || "Something went wrong.");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Unexpected error. Please try again.");
+  } finally {
+    setSendingBusiness(false);
+    setTimeout(() => setBusinessSuccessMsg(''), 3000);
+  }
+};
+
   return (
     <div className="w-full font-sans text-gray-800 overflow-x-hidden">
       {/* Hero Banner */}
@@ -56,37 +127,26 @@ export default function Contact() {
 
         <div className="font-raleway mt-16 flex flex-row gap-12 items-stretch justify-center">
           {/* Form */}
-          <form className="flex-1 max-w-md w-full space-y-6">
-            <input
-              type="text"
-              placeholder="Name"
-              className="border w-full p-3 rounded"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="border w-full p-3 rounded"
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              className="border w-full p-3 rounded"
-            />
-            <textarea
-              placeholder="Message"
-              rows={4}
-              className="border w-full p-3 rounded"
-            />
+          <form
+  onSubmit={handleContactSubmit}
+  className="flex-1 max-w-md w-full space-y-6"
+>
+  <input type="text" name="name" placeholder="Name" className="border w-full p-3 rounded" required />
+  <input type="email" name="email" placeholder="Email" className="border w-full p-3 rounded" required />
+  <input type="text" name="subject" placeholder="Subject" className="border w-full p-3 rounded" />
+  <textarea name="message" placeholder="Message" rows={4} className="border w-full p-3 rounded" required />
 
-            <div className="flex justify-start">
-              <button
-                type="submit"
-                className="bg-[#DC9B97] hover:bg-[#c98984] text-white px-6 py-3 rounded transition"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
+  <button type="submit" disabled={sendingContact} className="bg-[#DC9B97] hover:bg-[#c98984] text-white px-6 py-3 rounded transition">
+    {sendingContact ? 'Sending...' : 'Submit'}
+  </button>
+
+  {contactSuccessMsg && (
+    <div className="text-green-700 bg-green-100 border border-green-400 p-2 rounded text-sm">
+      {contactSuccessMsg}
+    </div>
+  )}
+</form>
+
 
           {/* Divider */}
           <div className="block bg-[#3D2F2B] w-[1px] self-stretch"></div>
@@ -144,31 +204,25 @@ export default function Contact() {
             press—let’s connect."
           </p>
 
-          <form className="space-y-6 max-w-xl mx-auto text-left font-raleway">
-            <input
-              type="text"
-              placeholder="Company"
-              className="border w-full p-3 rounded bg-white"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="border w-full p-3 rounded bg-white"
-            />
-            <input
-              type="text"
-              placeholder="Business Type"
-              className="border w-full p-3 rounded bg-white"
-            />
-            <textarea
-              placeholder="Message"
-              rows={4}
-              className="border w-full p-3 rounded bg-white"
-            />
-            <button className="bg-[#3D2F2B] text-white px-6 py-3 rounded hover:bg-[#2b221f] transition">
-              Inquiry
-            </button>
-          </form>
+         <form
+  onSubmit={handleBusinessSubmit}
+  className="space-y-6 max-w-xl mx-auto text-left font-[--font-raleway]"
+>
+  <input type="text" name="company" placeholder="Company" className="border w-full p-3 rounded bg-white" required />
+  <input type="email" name="email" placeholder="Email" className="border w-full p-3 rounded bg-white" required />
+  <input type="text" name="business_type" placeholder="Business Type" className="border w-full p-3 rounded bg-white" />
+  <textarea name="message" placeholder="Message" rows={4} className="border w-full p-3 rounded bg-white" required />
+  <button type="submit" disabled={sendingBusiness} className="bg-[#3D2F2B] text-white px-6 py-3 rounded hover:bg-[#2b221f] transition">
+    {sendingBusiness ? "Sending..." : "Inquiry"}
+  </button>
+
+  {businessSuccessMsg && (
+    <div className="text-green-700 bg-green-100 border border-green-400 p-2 rounded text-sm">
+      {businessSuccessMsg}
+    </div>
+  )}
+</form>
+
         </div>
       </section>
     </div>
