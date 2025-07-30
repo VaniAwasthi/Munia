@@ -3,6 +3,8 @@ export const metadata = {
   description: "Muina redefines K-beauty with potent natural actives and eco-conscious innovation. Skincare by women, for women—tailored for your unique skin.",
 };
 
+//test
+
 import HomeClient from './HomeClient';
 
 export default function ServerPage() {
