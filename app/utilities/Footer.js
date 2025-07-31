@@ -50,14 +50,14 @@ const Footer = () => {
               Available On
             </p>
             <a
-              href="https://www.amazon.in/s?i=beauty&rh=n%3A1355016031%2Cp_4%3AMuina"
+              href="https://www.amazon.in/s?k=muina&crid=2CXXH9HDBNAA4&sprefix=muina%2Caps%2C263&ref=nb_sb_noss_1"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image src={Amazon} alt="Amazon Logo" className="w-24 mb-4" />
             </a>
             <a
-              href="https://www.amazon.in/s?i=beauty&rh=n%3A1355016031%2Cp_4%3AMuina"
+              href="https://www.amazon.in/s?k=muina&crid=2CXXH9HDBNAA4&sprefix=muina%2Caps%2C263&ref=nb_sb_noss_1"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#A6857C] px-4 py-2 text-xs uppercase font-bold rounded hover:bg-opacity-90 transition"
