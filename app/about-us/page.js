@@ -19,7 +19,6 @@ const Page = () => {
       <AboutExplorer />
       <KindtoSkinSec />
       <Broucher />
-      <AmazonPromoSection />
     </>
   );
 };

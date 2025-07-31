@@ -256,24 +256,34 @@ export const HandcareSec = () => {
         id="ampoule"
         className="max-w-7xl mx-auto my-5 px-4 md:px-8 h-[350px] md:h-[420px] lg:h-[500px] bg-white flex items-center justify-center overflow-hidden"
       >
-        <Image
-          src={AmpouleBanner}
-          alt="Peptide Ampoule Banner"
-          width={800}
-          height={500}
-          className="object-contain w-full h-full"
-          priority
-        />
+        <a
+          href="https://www.amazon.in/Muina-Peptide-Time-Ampoule-Revitalizing/dp/B0FGV9M563/ref=sr_1_25?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-25"
+          target="_blank"
+        >
+          <Image
+            src={AmpouleBanner}
+            alt="Peptide Ampoule Banner"
+            width={800}
+            height={500}
+            className="object-contain w-full h-full"
+            priority
+          />
+        </a>
       </section>
 
       <section id="handcare" className="w-full my-5">
-        <Image
-          src={HandcareBanner}
-          width={600}
-          height={600}
-          alt="handcare"
-          className="w-full h-full object-center"
-        />
+        <a
+          href="https://www.amazon.in/Muina-Hand-Cream/dp/B0FGJ2BS2H/ref=sr_1_19?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-19"
+          target="_blank"
+        >
+          <Image
+            src={HandcareBanner}
+            width={600}
+            height={600}
+            alt="handcare"
+            className="w-full h-full object-center"
+          />
+        </a>
       </section>
     </>
   );
