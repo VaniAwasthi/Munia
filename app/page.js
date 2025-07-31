@@ -13,6 +13,7 @@ import {
   PatchSection,
 } from "./components/home/BamHydrasec";
 import { Mask } from "./components/home/Mask";
+import AmazonPromoSection from "./components/AmazonSec";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <EssenceAndBalmSection />
       <PatchSection />
       <EyeCare />
+      <AmazonPromoSection />
     </>
   );
 }

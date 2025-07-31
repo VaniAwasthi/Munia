@@ -6,6 +6,7 @@ import {
   SkinCareSteps,
 } from "../components/about/philosphySec";
 import { AboutExplorer, Broucher } from "../components/about/AboutExplorer";
+import AmazonPromoSection from "../components/AmazonSec";
 
 const Page = () => {
   return (
@@ -18,6 +19,7 @@ const Page = () => {
       <AboutExplorer />
       <KindtoSkinSec />
       <Broucher />
+      <AmazonPromoSection />
     </>
   );
 };
