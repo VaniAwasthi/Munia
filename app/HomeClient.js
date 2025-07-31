@@ -13,13 +13,13 @@ import {
   PatchSection,
 } from "./components/home/BamHydrasec";
 import { Mask } from "./components/home/Mask";
+import AmazonPromoSection from "./components/AmazonSec";
 
 export const metadata = {
   title: "Muina – Nature-Driven Korean Skincare for You",
-  description: "Muina redefines K-beauty with potent natural actives and eco-conscious innovation. Skincare by women, for women—tailored for your unique skin.",
+  description:
+    "Muina redefines K-beauty with potent natural actives and eco-conscious innovation. Skincare by women, for women—tailored for your unique skin.",
 };
-
-
 
 export default function HomeClient() {
   return (
@@ -34,6 +34,7 @@ export default function HomeClient() {
       <EssenceAndBalmSection />
       <PatchSection />
       <EyeCare />
+      <AmazonPromoSection />
     </>
   );
 }
