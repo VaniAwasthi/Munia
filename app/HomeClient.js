@@ -34,7 +34,6 @@ export default function HomeClient() {
       <EssenceAndBalmSection />
       <PatchSection />
       <EyeCare />
-      <AmazonPromoSection />
     </>
   );
 }
