@@ -70,11 +70,16 @@ export const EssenceAndBalmSection = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.4 }}
         >
-          <Image
-            src={HydraImg}
-            alt="Hydra Water Drop"
-            className="max-w-[500px] w-full h-auto"
-          />
+          <a
+            href="https://www.amazon.in/Muina-Essence-Cream-Moisturizer-Lightweight/dp/B0FGV93RKB/ref=sr_1_9?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-9"
+            tagret="_blank"
+          >
+            <Image
+              src={HydraImg}
+              alt="Hydra Water Drop"
+              className="max-w-[500px] w-full h-auto"
+            />
+          </a>
         </motion.div>
       </div>
       {/* Stick Balm */}
@@ -90,11 +95,16 @@ export const EssenceAndBalmSection = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
         >
-          <Image
-            src={BalmImg}
-            alt="Stick Balm"
-            className="max-w-[500px] w-full h-auto"
-          />
+          <a
+            href="https://www.amazon.in/Muina-Stick-Balm-Brightening-Lifting/dp/B0FGVDJ5GW/ref=sr_1_26?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-26"
+            target="_blabk"
+          >
+            <Image
+              src={BalmImg}
+              alt="Stick Balm"
+              className="max-w-[500px] w-full h-auto"
+            />
+          </a>
         </motion.div>
 
         {/* Right Text */}
@@ -130,7 +140,10 @@ export const EssenceAndBalmSection = () => {
 export const PatchSection = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 " id="acne">
-      <a href="" target="_blank">
+      <a
+        href="https://www.amazon.in/Collagen-Brightening-Anti-Wrinkle-Hydrating-Hydrolyzed/dp/B0FK4VRJC6/ref=sr_1_20?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-20"
+        target="_blank"
+      >
         <Image
           src={PatchImg}
           alt="Patch"
@@ -185,13 +198,15 @@ export const EyeCare = () => {
             className=" flex  items-center relative "
           >
             <div className="flex flex-col  h-full py-5">
-              <Image
-                src={item.image}
-                alt={item.title}
-                width={200}
-                height={300}
-                className="w-full object-contain transition-transform duration-300 hover:scale-105"
-              />
+              <a href={item.link} target="_blank">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={200}
+                  height={300}
+                  className="w-full object-contain transition-transform duration-300 hover:scale-105"
+                />
+              </a>
               <motion.p
                 initial={{ x: -50, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}

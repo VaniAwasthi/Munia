@@ -38,10 +38,26 @@ const sheetMasks = [
     name: "White Pearl Mask",
     image: Brightening,
     modalItems: [
-      { name: "Pomegranate Mask", image: Brightening1 },
-      { name: "White Pearl Mask", image: Brightening4 },
-      { name: "Rose Mask ", image: Brightening3 },
-      { name: "Yuzu Mask ", image: Brightening2 },
+      {
+        name: "Pomegranate Mask",
+        image: Brightening1,
+        link: "https://www.amazon.in/Muina-Pomegranate-Sheet-Mask-Rejuvenate/dp/B0FGV6CG7J/ref=sr_1_12?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-12",
+      },
+      {
+        name: "White Pearl Mask",
+        image: Brightening4,
+        link: "https://www.amazon.in/Muina-White-Pearl-Sheet-Mask/dp/B0FJMNGQKW/ref=sr_1_7?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-7   ",
+      },
+      {
+        name: "Rose Mask ",
+        image: Brightening3,
+        link: "https://www.amazon.in/Muina-Rose-Sheet-Mask-Hydrating/dp/B0FGV5Q4BG/ref=sr_1_10?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-10",
+      },
+      {
+        name: "Yuzu Mask ",
+        image: Brightening2,
+        link: "https://amzn.in/d/6Tmorut",
+      },
     ],
   },
   {
@@ -49,10 +65,26 @@ const sheetMasks = [
     name: "Avocado Mask",
     image: Nourishing,
     modalItems: [
-      { name: "Acai Berry Mask", image: Nourishing1 },
-      { name: "Royal Jelly Mask", image: Nourishing4 },
-      { name: "Carrot Mask", image: Nourishing3 },
-      { name: "Turmeric Mask", image: Nourishing2 },
+      {
+        name: "Acai Berry Mask",
+        image: Nourishing1,
+        link: "https://amzn.in/d/6Tmorut",
+      },
+      {
+        name: "Royal Jelly Mask",
+        image: Nourishing4,
+        link: "https://amzn.in/d/6Tmorut",
+      },
+      {
+        name: "Carrot Mask",
+        image: Nourishing3,
+        link: " https://www.amazon.in/Muina-Carrot-Sheet-Mask-Nourishing/dp/B0FGV6YZPZ/ref=sr_1_8?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-8",
+      },
+      {
+        name: "Turmeric Mask",
+        image: Nourishing2,
+        link: "https://www.amazon.in/Muina-Turmeric-Facial-Sheet-Mask/dp/B0FGV812WF/ref=sr_1_13?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-13 ",
+      },
     ],
   },
   {
@@ -60,10 +92,26 @@ const sheetMasks = [
     name: "Blueberry Mask",
     image: Moisturizing,
     modalItems: [
-      { name: "Tomato Mask", image: Moisturizing4 },
-      { name: "Kombucha Mask", image: Moisturizing3 },
-      { name: "Green Tea Mask", image: Moisturizing2 },
-      { name: "Papaya Mask", image: Moisturizing1 },
+      {
+        name: "Tomato Mask",
+        image: Moisturizing4,
+        link: "https://amzn.in/d/6Tmorut",
+      },
+      {
+        name: "Kombucha Mask",
+        image: Moisturizing3,
+        link: "https://amzn.in/d/6Tmorut",
+      },
+      {
+        name: "Green Tea Mask",
+        image: Moisturizing2,
+        link: "https://www.amazon.in/Muina-Green-Facial-Sheet-Mask/dp/B0FKBP11PJ/ref=sr_1_14?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-14",
+      },
+      {
+        name: "Papaya Mask",
+        image: Moisturizing1,
+        link: "https://amzn.in/d/6Tmorut",
+      },
     ],
   },
   {
@@ -71,10 +119,26 @@ const sheetMasks = [
     name: "Tea Tree Mask",
     image: Soothing,
     modalItems: [
-      { name: "Tea Tree Mask", image: Soothing4 },
-      { name: "Oatmeal Mask", image: Soothing3 },
-      { name: "Avocado Mask ", image: Soothing1 },
-      { name: "Charcoal Mask ", image: Soothing2 },
+      {
+        name: "Tea Tree Mask",
+        image: Soothing4,
+        link: "https://www.amazon.in/Muina-Green-Facial-Sheet-Mask/dp/B0FKBP11PJ/ref=sr_1_14?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-14",
+      },
+      {
+        name: "Oatmeal Mask",
+        image: Soothing3,
+        link: "https://amzn.in/d/6Tmorut",
+      },
+      {
+        name: "Avocado Mask ",
+        image: Soothing1,
+        link: "https://amzn.in/d/6Tmorut",
+      },
+      {
+        name: "Charcoal Mask ",
+        image: Soothing2,
+        link: "https://www.amazon.in/Muina-Charcoal-Sheet-Mask-Rejuvenating/dp/B0FJMK34V6/ref=sr_1_6?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-6",
+      },
     ],
   },
 ];
@@ -202,20 +266,28 @@ export const Mask = () => {
                 {activeItems.map((item, idx) => (
                   <div key={idx} className="p-4 rounded text-center">
                     {/* Sheet Mask Image */}
-                    <Image
-                      src={item.image}
-                      alt={item.name}
-                      width={200}
-                      height={200}
-                      className="mx-auto w-[250px] h-[300px] "
-                    />
+                    <a href={item.link} target="_blank">
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        width={200}
+                        height={200}
+                        className="mx-auto w-[250px] h-[300px] "
+                      />
+                    </a>
 
                     {/* Icon just below the sheet mask */}
                     <Image src={IconImg} alt="Icon" className="mx-auto mt-2" />
 
                     {/* Name below the icon */}
                     <p className="font-lustria text-[#692F21] mt-2 text-md font-medium ">
-                      {item.name}
+                      <a
+                        className=" text-[#692F21]"
+                        href={item.link}
+                        target="_blank"
+                      >
+                        {item.name}
+                      </a>
                     </p>
                   </div>
                 ))}
