@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         {/* 2. Amazon CTA */}
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 lg:mt-10">
           <div className="flex flex-col items-center justify-center ccursor-pointor">
             <p className="uppercase tracking-wide mb-2 text-md font-semibold">
               Available On
@@ -65,7 +65,7 @@ const Footer = () => {
               Shop Now
             </a>
           </div>
-          <div className="flex md:hidden flex-col space-y-2 text-center md:text-left">
+          <div className="flex md:hidden flex-col space-y-2 text-center md:text-left ">
             <Link
               href="/"
               className="uppercase font-semibold tracking-wide text-sm"
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
 
         {/* 3. Navigation & Social */}
-        <div className="flex flex-col md:flex-row justify-center md:justify-end gap-10">
+        <div className="flex flex-col md:flex-row justify-center md:justify-end gap-10 lg:mt-10">
           <div className="hidden md:flex flex-col space-y-2 text-center md:text-left">
             <Link
               href="/"
