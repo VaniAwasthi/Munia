@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {useState,useEffect} from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
@@ -9,75 +9,71 @@ import TextBg from "../../assets/contact/InfoSec.webp";
 import { motion } from "framer-motion";
 
 export default function Contact() {
-
-
   const [sendingContact, setSendingContact] = useState(false);
-const [contactSuccessMsg, setContactSuccessMsg] = useState('');
+  const [contactSuccessMsg, setContactSuccessMsg] = useState("");
 
-const [sendingBusiness, setSendingBusiness] = useState(false);
-const [businessSuccessMsg, setBusinessSuccessMsg] = useState('');
+  const [sendingBusiness, setSendingBusiness] = useState(false);
+  const [businessSuccessMsg, setBusinessSuccessMsg] = useState("");
 
   const handleContactSubmit = async (e) => {
-  e.preventDefault();
-  setSendingContact(true);
+    e.preventDefault();
+    setSendingContact(true);
 
-  const form = e.target;
-  const formData = new FormData(form);
+    const form = e.target;
+    const formData = new FormData(form);
 
-  try {
-    const res = await fetch("/data/contact", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const res = await fetch("/data/contact", {
+        method: "POST",
+        body: formData,
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (res.ok && data.success) {
-      setContactSuccessMsg(data.message || "Message sent successfully!");
-      form.reset();
-    } else {
-      alert(data.error || "Something went wrong.");
+      if (res.ok && data.success) {
+        setContactSuccessMsg(data.message || "Message sent successfully!");
+        form.reset();
+      } else {
+        alert(data.error || "Something went wrong.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Unexpected error. Please try again.");
+    } finally {
+      setSendingContact(false);
+      setTimeout(() => setContactSuccessMsg(""), 3000);
     }
-  } catch (error) {
-    console.error(error);
-    alert("Unexpected error. Please try again.");
-  } finally {
-    setSendingContact(false);
-    setTimeout(() => setContactSuccessMsg(''), 3000);
-  }
-};
-
-
+  };
 
   const handleBusinessSubmit = async (e) => {
-  e.preventDefault();
-  setSendingBusiness(true);
+    e.preventDefault();
+    setSendingBusiness(true);
 
-  const form = e.target;
-  const formData = new FormData(form);
+    const form = e.target;
+    const formData = new FormData(form);
 
-  try {
-    const res = await fetch("/data/business", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const res = await fetch("/data/business", {
+        method: "POST",
+        body: formData,
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (res.ok && data.success) {
-      setBusinessSuccessMsg(data.message || "Inquiry sent successfully!");
-      form.reset();
-    } else {
-      alert(data.error || "Something went wrong.");
+      if (res.ok && data.success) {
+        setBusinessSuccessMsg(data.message || "Inquiry sent successfully!");
+        form.reset();
+      } else {
+        alert(data.error || "Something went wrong.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Unexpected error. Please try again.");
+    } finally {
+      setSendingBusiness(false);
+      setTimeout(() => setBusinessSuccessMsg(""), 3000);
     }
-  } catch (error) {
-    console.error(error);
-    alert("Unexpected error. Please try again.");
-  } finally {
-    setSendingBusiness(false);
-    setTimeout(() => setBusinessSuccessMsg(''), 3000);
-  }
-};
+  };
 
   return (
     <div className="w-full font-sans text-gray-800 overflow-x-hidden">
@@ -128,25 +124,51 @@ const [businessSuccessMsg, setBusinessSuccessMsg] = useState('');
         <div className="font-raleway mt-16 flex flex-row gap-12 items-stretch justify-center">
           {/* Form */}
           <form
-  onSubmit={handleContactSubmit}
-  className="flex-1 max-w-md w-full space-y-6"
->
-  <input type="text" name="name" placeholder="Name" className="border w-full p-3 rounded" required />
-  <input type="email" name="email" placeholder="Email" className="border w-full p-3 rounded" required />
-  <input type="text" name="subject" placeholder="Subject" className="border w-full p-3 rounded" />
-  <textarea name="message" placeholder="Message" rows={4} className="border w-full p-3 rounded" required />
+            onSubmit={handleContactSubmit}
+            className="flex-1 max-w-md w-full space-y-6"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              className="border w-full p-3 rounded"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              className="border w-full p-3 rounded"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              className="border w-full p-3 rounded"
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows={4}
+              className="border w-full p-3 rounded"
+              required
+            />
 
-  <button type="submit" disabled={sendingContact} className="bg-[#DC9B97] hover:bg-[#c98984] text-white px-6 py-3 rounded transition">
-    {sendingContact ? 'Sending...' : 'Submit'}
-  </button>
+            <button
+              type="submit"
+              disabled={sendingContact}
+              className="bg-[#DC9B97] hover:bg-[#c98984] text-white px-6 py-3 rounded transition"
+            >
+              {sendingContact ? "Sending..." : "Submit"}
+            </button>
 
-  {contactSuccessMsg && (
-    <div className="text-green-700 bg-green-100 border border-green-400 p-2 rounded text-sm">
-      {contactSuccessMsg}
-    </div>
-  )}
-</form>
-
+            {contactSuccessMsg && (
+              <div className="text-green-700 bg-green-100 border border-green-400 p-2 rounded text-sm">
+                {contactSuccessMsg}
+              </div>
+            )}
+          </form>
 
           {/* Divider */}
           <div className="block bg-[#3D2F2B] w-[1px] self-stretch"></div>
@@ -156,9 +178,9 @@ const [businessSuccessMsg, setBusinessSuccessMsg] = useState('');
             <div>
               <h3 className="font-bold text-lg">Address</h3>
               <p>
-                Muina Skincare HQ
+                Ground Floor, 22/3, C Block,Near Airtel Office,
                 <br />
-                123 Wellness Avenue, New Delhi, India – 110001
+                Sector 57, Noida Gautam buddha nagar UP- 201302
               </p>
             </div>
             <div>
@@ -167,13 +189,13 @@ const [businessSuccessMsg, setBusinessSuccessMsg] = useState('');
                 <div className="flex items-center gap-2">
                   <MdEmail className="text-xl" />
                   <a href="mailto:support@munia.in" className="text-[#000]">
-                    support@munia.in
+                    saineeglobal@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <MdPhone className="text-xl" />
                   <a href="tel:+919876543210" className="text-[#000]">
-                    +91 98765 43210
+                    91 96255 74294
                   </a>
                 </div>
               </div>
@@ -204,25 +226,51 @@ const [businessSuccessMsg, setBusinessSuccessMsg] = useState('');
             press—let’s connect."
           </p>
 
-         <form
-  onSubmit={handleBusinessSubmit}
-  className="space-y-6 max-w-xl mx-auto text-left font-[--font-raleway]"
->
-  <input type="text" name="company" placeholder="Company" className="border w-full p-3 rounded bg-white" required />
-  <input type="email" name="email" placeholder="Email" className="border w-full p-3 rounded bg-white" required />
-  <input type="text" name="business_type" placeholder="Business Type" className="border w-full p-3 rounded bg-white" />
-  <textarea name="message" placeholder="Message" rows={4} className="border w-full p-3 rounded bg-white" required />
-  <button type="submit" disabled={sendingBusiness} className="bg-[#3D2F2B] text-white px-6 py-3 rounded hover:bg-[#2b221f] transition">
-    {sendingBusiness ? "Sending..." : "Inquiry"}
-  </button>
+          <form
+            onSubmit={handleBusinessSubmit}
+            className="space-y-6 max-w-xl mx-auto text-left font-[--font-raleway]"
+          >
+            <input
+              type="text"
+              name="company"
+              placeholder="Company"
+              className="border w-full p-3 rounded bg-white"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              className="border w-full p-3 rounded bg-white"
+              required
+            />
+            <input
+              type="text"
+              name="business_type"
+              placeholder="Business Type"
+              className="border w-full p-3 rounded bg-white"
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows={4}
+              className="border w-full p-3 rounded bg-white"
+              required
+            />
+            <button
+              type="submit"
+              disabled={sendingBusiness}
+              className="bg-[#3D2F2B] text-white px-6 py-3 rounded hover:bg-[#2b221f] transition"
+            >
+              {sendingBusiness ? "Sending..." : "Inquiry"}
+            </button>
 
-  {businessSuccessMsg && (
-    <div className="text-green-700 bg-green-100 border border-green-400 p-2 rounded text-sm">
-      {businessSuccessMsg}
-    </div>
-  )}
-</form>
-
+            {businessSuccessMsg && (
+              <div className="text-green-700 bg-green-100 border border-green-400 p-2 rounded text-sm">
+                {businessSuccessMsg}
+              </div>
+            )}
+          </form>
         </div>
       </section>
     </div>
