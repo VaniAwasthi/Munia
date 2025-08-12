@@ -30,7 +30,6 @@ import Moisturizing4 from "../../assets/Home/sheetMask/moisturizing/Tammato.webp
 import IconImg from "../../assets/Home/sheetMask/icon.webp";
 import PrevArrwo from "../../assets/Home/sheetMask/pre.webp";
 import NextArrwo from "../../assets/Home/sheetMask/nextArrow.webp";
-import Link from "next/link";
 
 const sheetMasks = [
   {
@@ -41,17 +40,17 @@ const sheetMasks = [
       {
         name: "Pomegranate Mask",
         image: Brightening1,
-        link: "https://www.amazon.in/Muina-Pomegranate-Sheet-Mask-Rejuvenate/dp/B0FGV6CG7J/ref=sr_1_12?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-12",
+        link: "https://www.amazon.in/Muina-Pomegranate-Hydrating-Brightening-Skincare/dp/B0FL2QL9G7/ref=sr_1_14?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.UQGS71I6gx0dj6ZSGa6gS2kqCwDwowpstIPV7dUd-pcz7Uh-2EdD_hJcO3gBDdleUgmDVM1ktdn2UkqBzKLq2ZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.vCtSIApUsHlhoUnsqtEF5ih_u7tyhIAOy-POL_BRkkQ&dib_tag=se&keywords=muina&qid=1754976158&sprefix=muina%2Caps%2C248&sr=8-14",
       },
       {
         name: "White Pearl Mask",
         image: Brightening4,
-        link: "https://www.amazon.in/Muina-White-Pearl-Sheet-Mask/dp/B0FJMNGQKW/ref=sr_1_7?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-7   ",
+        link: "https://www.amazon.in/Muina-White-Pearl-Sheet-Mask/dp/B0FJMNGQKW/ref=sr_1_3?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.UQGS71I6gx0dj6ZSGa6gS2kqCwDwowpstIPV7dUd-pcz7Uh-2EdD_hJcO3gBDdleUgmDVM1ktdn2UkqBzKLq2ZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.vCtSIApUsHlhoUnsqtEF5ih_u7tyhIAOy-POL_BRkkQ&dib_tag=se&keywords=muina&qid=1754976158&sprefix=muina%2Caps%2C248&sr=8-3",
       },
       {
         name: "Rose Mask ",
         image: Brightening3,
-        link: "https://www.amazon.in/Muina-Rose-Sheet-Mask-Hydrating/dp/B0FGV5Q4BG/ref=sr_1_10?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-10",
+        link: "https://www.amazon.in/Muina-Sheet-Mask/dp/B0FL2QDMJZ/ref=sr_1_13?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.UQGS71I6gx0dj6ZSGa6gS2kqCwDwowpstIPV7dUd-pcz7Uh-2EdD_hJcO3gBDdleUgmDVM1ktdn2UkqBzKLq2ZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.vCtSIApUsHlhoUnsqtEF5ih_u7tyhIAOy-POL_BRkkQ&dib_tag=se&keywords=muina&qid=1754976158&sprefix=muina%2Caps%2C248&sr=8-13",
       },
       {
         name: "Yuzu Mask ",
@@ -73,7 +72,7 @@ const sheetMasks = [
       {
         name: "Royal Jelly Mask",
         image: Nourishing4,
-        link: "https://amzn.in/d/6Tmorut",
+        link: "https://www.amazon.in/Muina-Charcoal-Glowing-Hydration-Brightening/dp/B0FJLD4JLY/ref=sr_1_1?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.UQGS71I6gx0dj6ZSGa6gS2kqCwDwowpstIPV7dUd-pcz7Uh-2EdD_hJcO3gBDdleUgmDVM1ktdn2UkqBzKLq2ZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.vCtSIApUsHlhoUnsqtEF5ih_u7tyhIAOy-POL_BRkkQ&dib_tag=se&keywords=muina&qid=1754976158&sprefix=muina%2Caps%2C248&sr=8-1",
       },
       {
         name: "Carrot Mask",
@@ -83,7 +82,7 @@ const sheetMasks = [
       {
         name: "Turmeric Mask",
         image: Nourishing2,
-        link: "https://www.amazon.in/Muina-Turmeric-Facial-Sheet-Mask/dp/B0FGV812WF/ref=sr_1_13?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-13 ",
+        link: "https://www.amazon.in/Muina-Brightening-Detoxifying-Clarifying-Anti-Aging/dp/B0FL2QV65V/ref=sr_1_7?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.UQGS71I6gx0dj6ZSGa6gS2kqCwDwowpstIPV7dUd-pcz7Uh-2EdD_hJcO3gBDdleUgmDVM1ktdn2UkqBzKLq2ZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.vCtSIApUsHlhoUnsqtEF5ih_u7tyhIAOy-POL_BRkkQ&dib_tag=se&keywords=muina&qid=1754976158&sprefix=muina%2Caps%2C248&sr=8-7",
       },
     ],
   },
@@ -105,12 +104,12 @@ const sheetMasks = [
       {
         name: "Green Tea Mask",
         image: Moisturizing2,
-        link: "https://www.amazon.in/Muina-Green-Facial-Sheet-Mask/dp/B0FKBP11PJ/ref=sr_1_14?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-14",
+        link: "https://www.amazon.in/Muina-Pomegranate-Hydrating-Brightening-Skincare/dp/B0FL2QL9G7/ref=sr_1_14?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.UQGS71I6gx0dj6ZSGa6gS2kqCwDwowpstIPV7dUd-pcz7Uh-2EdD_hJcO3gBDdleUgmDVM1ktdn2UkqBzKLq2ZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.vCtSIApUsHlhoUnsqtEF5ih_u7tyhIAOy-POL_BRkkQ&dib_tag=se&keywords=muina&qid=1754976158&sprefix=muina%2Caps%2C248&sr=8-14",
       },
       {
         name: "Papaya Mask",
         image: Moisturizing1,
-        link: "https://amzn.in/d/6Tmorut",
+        link: "https://www.amazon.in/Muina-Charcoal-Glowing-Hydration-Brightening/dp/B0FJLD4JLY/ref=sr_1_1?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.UQGS71I6gx0dj6ZSGa6gS2kqCwDwowpstIPV7dUd-pcz7Uh-2EdD_hJcO3gBDdleUgmDVM1ktdn2UkqBzKLq2ZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.vCtSIApUsHlhoUnsqtEF5ih_u7tyhIAOy-POL_BRkkQ&dib_tag=se&keywords=muina&qid=1754976158&sprefix=muina%2Caps%2C248&sr=8-1",
       },
     ],
   },
@@ -137,7 +136,7 @@ const sheetMasks = [
       {
         name: "Charcoal Mask ",
         image: Soothing2,
-        link: "https://www.amazon.in/Muina-Charcoal-Sheet-Mask-Rejuvenating/dp/B0FJMK34V6/ref=sr_1_6?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-6",
+        link: "https://www.amazon.in/Muina-Charcoal-Glowing-Hydration-Brightening/dp/B0FJLD4JLY/ref=sr_1_1?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.UQGS71I6gx0dj6ZSGa6gS2kqCwDwowpstIPV7dUd-pcz7Uh-2EdD_hJcO3gBDdleUgmDVM1ktdn2UkqBzKLq2ZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.vCtSIApUsHlhoUnsqtEF5ih_u7tyhIAOy-POL_BRkkQ&dib_tag=se&keywords=muina&qid=1754976158&sprefix=muina%2Caps%2C248&sr=8-1",
       },
     ],
   },

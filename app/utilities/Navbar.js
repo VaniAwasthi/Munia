@@ -35,7 +35,7 @@ export const Navbar = () => {
           <div className="flex items-center justify-center space-x-2">
             <span className="text-sm">SHOP NOW ON</span>
             <a
-              href="https://www.amazon.in/"
+              href="https://amzn.in/d/6Tmorut"
               target="_blank"
               rel="noopener noreferrer"
             >
