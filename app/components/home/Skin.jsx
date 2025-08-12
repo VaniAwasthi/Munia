@@ -144,14 +144,17 @@ export const CleansingRange = () => {
     {
       title: "Rice Deep Cleanser",
       image: RiceDeep,
+      href: "https://www.amazon.in/Collagen-Brightening-Anti-Wrinkle-Hydrating-Hydrolyzed/dp/B0FK4VRJC6/ref=sr_1_20?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-20",
     },
     {
       title: "Aloevera Deep Cleanser",
       image: AleoVera,
+      href: "https://www.amazon.in/Collagen-Brightening-Anti-Wrinkle-Hydrating-Hydrolyzed/dp/B0FK4VRJC6/ref=sr_1_20?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-20",
     },
     {
       title: "Vitamin C Deep Cleanser",
       image: VitaminC,
+      href: "https://www.amazon.in/Collagen-Brightening-Anti-Wrinkle-Hydrating-Hydrolyzed/dp/B0FK4VRJC6/ref=sr_1_20?crid=1QJDCBBMBKQFV&dib=eyJ2IjoiMSJ9.3tGCRKEb-6hJUDTk7JNlBI4kDfoHXA0f0Tditf3ILpeAv2tDifUS9g2oF_6Al2jLboq2D5sQjZvvE4x0lYh7vfyGPPAwiK1Qb2yT1mnAlXDX-M2aA8PqCTmB6ajsue2vvOB_pT_AvMZxZcnVlQZ70W_cbqloujTxbHdAQRf__k4OpUUOs3-flRG8Jj7aY8TVUCcfqMo_bBQwH3YUuct29JVpQtkpb4zaAHmoBZD_v1urpnILeG-cdxxz_SJmVlq7cqnB8lTR8-nAQ5bP51RV_yr122fC8TJZ-YJo9j96FYw.ZCw4rCq6fCr-aM2zYRzMi1oCfGHvtNQFPfuvdW0ankc&dib_tag=se&keywords=muina&qid=1753961386&sprefix=muina%2Caps%2C254&sr=8-20",
     },
   ];
   return (
@@ -191,22 +194,26 @@ export const CleansingRange = () => {
               className="w-1/3 flex flex-col items-center relative px-4"
             >
               <div className="flex flex-col items-center h-full py-5">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  width={180}
-                  height={250}
-                  className="object-contain transition-transform duration-300 hover:scale-105 h-[300px]"
-                />
-                <motion.p
-                  initial={{ x: -50, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 1, delay: 0.2 }}
-                  viewport={{ once: false, amount: 0.3 }}
-                  className="my-8 font-raleway text-[18px] font-light"
-                >
-                  {item.title}
-                </motion.p>
+                <a href={item.href} target="_blank">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={180}
+                    height={250}
+                    className="object-contain transition-transform duration-300 hover:scale-105 h-[300px]"
+                  />
+                </a>
+                <a href={item.href} target="_blank">
+                  <motion.p
+                    initial={{ x: -50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.2 }}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className="my-8 font-raleway text-[18px] font-light"
+                  >
+                    {item.title}
+                  </motion.p>
+                </a>
               </div>
 
               {/* Full-height Vertical Divider */}
