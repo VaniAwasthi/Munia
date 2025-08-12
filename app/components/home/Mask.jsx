@@ -36,6 +36,7 @@ const sheetMasks = [
     category: "Brightening & Glow",
     name: "White Pearl Mask",
     image: Brightening,
+    href: "https://www.amazon.in/Muina-Brightening-Detoxifying-Tightening-Anti-Aging/dp/B0FL2SLQ46/ref=sr_1_10?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.UQGS71I6gx0dj6ZSGa6gS2kqCwDwowpstIPV7dUd-pcz7Uh-2EdD_hJcO3gBDdleUgmDVM1ktdn2UkqBzKLq2ZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.vCtSIApUsHlhoUnsqtEF5ih_u7tyhIAOy-POL_BRkkQ&dib_tag=se&keywords=muina&qid=1754976158&sprefix=muina%2Caps%2C248&sr=8-10",
     modalItems: [
       {
         name: "Pomegranate Mask",
@@ -63,6 +64,7 @@ const sheetMasks = [
     category: "Nourishing",
     name: "Avocado Mask",
     image: Nourishing,
+    href: " https://www.amazon.in/Muina-Carrot-Charcoal-Pomegranate-Turmeric/dp/B0FJL9DWD1/ref=sr_1_9?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.cuFYqQJhfndbooPS3tvdycuGVdvTeL59t-P2_SpK8OaPpP4SBn6WQBvSr9AYBEcVRxNtiTUIJfvlObPQGe_syZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.ZviiPdNomOEopm-PRGFQdy-ITB92bos5AMRH3hIAcBk&dib_tag=se&keywords=muina&qid=1754986633&sprefix=muina%2Caps%2C248&sr=8-9",
     modalItems: [
       {
         name: "Acai Berry Mask",
@@ -90,6 +92,7 @@ const sheetMasks = [
     category: "Moisturizing",
     name: "Blueberry Mask",
     image: Moisturizing,
+    href: "https://www.amazon.in/Muina-Pomegranate-Hydrating-Brightening-Skincare/dp/B0FL2QL9G7/ref=sr_1_14?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.cuFYqQJhfndbooPS3tvdycuGVdvTeL59t-P2_SpK8OaPpP4SBn6WQBvSr9AYBEcVRxNtiTUIJfvlObPQGe_syZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.ZviiPdNomOEopm-PRGFQdy-ITB92bos5AMRH3hIAcBk&dib_tag=se&keywords=muina&qid=1754986633&sprefix=muina%2Caps%2C248&sr=8-14",
     modalItems: [
       {
         name: "Tomato Mask",
@@ -117,6 +120,7 @@ const sheetMasks = [
     category: "Soothing",
     name: "Tea Tree Mask",
     image: Soothing,
+    href: "https://www.amazon.in/Muina-Pomegranate-Turmeric-Green-Sheet/dp/B0FJLGM5GW/ref=sr_1_16?crid=5YXEWQLXNTY6&dib=eyJ2IjoiMSJ9.cuFYqQJhfndbooPS3tvdycuGVdvTeL59t-P2_SpK8OaPpP4SBn6WQBvSr9AYBEcVRxNtiTUIJfvlObPQGe_syZFUxzqThWGTsuETAnbR-HXBB3fPBG4z0G2dSl0FcLA5Rn4J06o2E55IPwiTzcOir-swUQNy6uHs8iJEACggg7SzAxfqsHoJGti_euZbsEpfyr3SHaSDywSUcagz0q2c5i5SnXjNeamCReVNfWFeYlw.ZviiPdNomOEopm-PRGFQdy-ITB92bos5AMRH3hIAcBk&dib_tag=se&keywords=muina&qid=1754986633&sprefix=muina%2Caps%2C248&sr=8-16",
     modalItems: [
       {
         name: "Tea Tree Mask",
@@ -225,17 +229,21 @@ export const Mask = () => {
                     className="w-fit mx-auto shadow-[0_8px_30px_#F7DDDD] h-[450px]"
                     onClick={() => openModal(mask.modalItems)}
                   >
-                    <Image
-                      src={mask.image}
-                      alt={mask.name}
-                      width={300}
-                      height={400}
-                      className="mx-auto h-[450px] w-[300px] object-cover rounded-t"
-                    />
+                    <a href={mask.href} target="_blank">
+                      <Image
+                        src={mask.image}
+                        alt={mask.name}
+                        width={300}
+                        height={400}
+                        className="mx-auto h-[450px] w-[300px] object-cover rounded-t"
+                      />
+                    </a>
                   </div>
                 </div>
                 <h4 className="font-lustria text-[#692F21] text-[20px] text-center md:text-left font-medium mt-4">
-                  {mask.category}
+                  <a href={mask.href} target="_blank">
+                    {mask.category}
+                  </a>
                 </h4>
               </SwiperSlide>
             ))}
